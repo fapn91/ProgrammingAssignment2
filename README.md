@@ -1,6 +1,9 @@
-## makeCacheMatrix and cacheSolve creates a matrix and find its inverse. Both functions assume that the matrix is always a square matrix
+###Assignment 2
+makeCacheMatrix and cacheSolve creates a matrix and find its inverse. Both functions assume that the matrix is always a square matrix
 
-### makeCacheMatrix is a function which gets and sets the square matrix, and sets and gets its inverse.
+makeCacheMatrix is a function which gets and sets the square matrix, and sets and gets its inverse.
+
+<!-- --> 
 
 makeCacheMatrix <- function(x = matrix()) {
         s <- NULL
@@ -17,8 +20,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## cacheSolve is a function that computes the inverse of the matrix taken from makeCacheMatrix. If the inverse has been 
-## calculated previously by makeCacheMatrix, then it avoids the computation and returns the original inverse matrix.
+cacheSolve is a function that computes the inverse of the matrix taken from makeCacheMatrix. If the inverse has been 
+calculated previously by makeCacheMatrix, then it avoids the computation and returns the original inverse matrix.
+
 cacheSolve <- function(x, ...) {
         s <- x$getsolve()
         if(!is.null(s)) {
